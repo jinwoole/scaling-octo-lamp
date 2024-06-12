@@ -1,5 +1,5 @@
 # scaling-octo-lamp
-
+~~~ mermaid
 erDiagram
     PARTNER {
         int partner_id PK
@@ -43,6 +43,7 @@ erDiagram
         int inquiry_id FK
         text remark_text
     }
+~~~
 
     PARTNER ||--o{ INQUIRY : has
     HANDLER ||--o{ INQUIRY : assigned_to
