@@ -43,11 +43,10 @@ erDiagram
         int inquiry_id FK
         text remark_text
     }
-~~~
-
     PARTNER ||--o{ INQUIRY : has
     HANDLER ||--o{ INQUIRY : assigned_to
     PARTNER ||--o{ PARTNERHANDLER : employs
     PARTNERHANDLER ||--o{ INQUIRY : contacts
     PROJECT ||--o{ INQUIRY : includes
     INQUIRY ||--o{ REMARK : contains
+~~~
